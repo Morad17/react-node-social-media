@@ -7,7 +7,6 @@ const app = express()
 
 
 
-mongoose.connect(process.env.REACT_APP_MONGODB_URI)
-console.log(process.env.REACT_APP_MONGODB_URI);
+mongoose.connect(process.env.MONGODB_URI)
 
-app.listen( 5000, console.log("server is running"))
+app.listen( 5000, console.log("server is running"))  
